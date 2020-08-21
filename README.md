@@ -9,7 +9,7 @@ This provider lets you declaratively manage your long term holdings with Terrafo
 
 ### Seriously why?
 
-Well, honestly this is a fun project aimed at learning to build a Terraform Plugin. The Plugin SDK is quite nice and I wanted to dig in some internals of how Terraform Provider works. This project helped me achieve that goal.
+Well, honestly this is a fun project aimed at learning to build a Terraform Plugin. The [Plugin SDK](https://www.terraform.io/docs/extend/plugin-sdk.html) architecture is quite nice and I wanted to dig in some internals of how Terraform Provider works. This project helped me achieve that goal.
 
 ## Installing
 
