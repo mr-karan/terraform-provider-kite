@@ -1,0 +1,4 @@
+- [x] Write docs and release v0.0.1
+- [x] Implement `terraform import` to import existing holdings.
+- [ ] Custom validation to accept only `CASH` segment.
+- [ ] Add more metadata to schema.
