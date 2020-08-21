@@ -13,9 +13,13 @@ Well, honestly this is a fun project aimed at learning to build a Terraform Plug
 
 ## Installing
 
-Download `bin/terraform-provider-kite` and place it on your machine at `$PLUGIN_DIRECTORY/$SOURCEHOSTNAME/$SOURCENAMESPACE/$NAME/$VERSION/$OS_$ARCH/`. Follow the [instructions to install Third-party Providers](https://www.hashicorp.com/blog/automatic-installation-of-third-party-providers-with-terraform-0-13/) if you get stuck.
+Download the latest binary from [Releases](https://github.com/mr-karan/terraform-provider-kite/releases) and place it on your machine at `$PLUGIN_DIRECTORY/$SOURCEHOSTNAME/$SOURCENAMESPACE/$NAME/$VERSION/$OS_$ARCH/`. Follow the [instructions to install Third-party Providers](https://www.hashicorp.com/blog/automatic-installation-of-third-party-providers-with-terraform-0-13/) if you get stuck.
 
 ```sh
+# Follow the steps if you are on Linux
+cd /tmp
+curl -sL https://github.com/mr-karan/terraform-provider-kite/releases/tag/v0.1.0 | tar xz
+mv terraform-provider-kite ~/.terraform.d/plugins/mrkaran.dev/github/kite/0.1/linux_amd64/
 ```
 
 You can view [examples/versions.tf](examples/versions.tf) for the sample provider configuration.
