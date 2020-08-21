@@ -41,3 +41,4 @@ terraform
 # Custom stuff
 .env
 .tf-kite-secret
+dist/

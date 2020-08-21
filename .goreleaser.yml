@@ -1,0 +1,20 @@
+env:
+  - GO111MODULE=on
+  - CGO_ENABLED=0
+  - RELEASE_BUILDS=dist/terraform-provider-kite_darwin_amd64/terraform-provider-kite dist/terraform-provider-kite_linux_amd64/terraform-provider-kite
+
+builds:
+  - binary: terraform-provider-kite
+    goos:
+      - darwin
+      - linux
+    goarch:
+      - amd64
+    ldflags:
+      - -s -w -X "main.buildVersion={{ .Tag }} ({{ .ShortCommit }} {{ .Date }})"
+
+archives:
+  - format: tar.gz
+    files:
+      - README.md
+      - LICENSE

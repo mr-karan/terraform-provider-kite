@@ -13,7 +13,7 @@ Well, honestly this is a fun project aimed at learning to build a Terraform Plug
 
 ## Installing
 
-Download `bin/terraform-provider-kite` and place it on your machine at `~/.terraform.d/plugins/mrkaran.dev/github/kite/`. Follow the [official instructions](https://www.terraform.io/docs/configuration/providers.html#third-party-plugins) for more information.
+Download `bin/terraform-provider-kite` and place it on your machine at `$PLUGIN_DIRECTORY/$SOURCEHOSTNAME/$SOURCENAMESPACE/$NAME/$VERSION/$OS_$ARCH/`. Follow the [instructions to install Third-party Providers](https://www.hashicorp.com/blog/automatic-installation-of-third-party-providers-with-terraform-0-13/) if you get stuck.
 
 ```sh
 ```
@@ -82,12 +82,12 @@ provider "kite" {
 
 ## Warnings and Caveats
 
-- The author of this program is currently employed by Zerodha but this software isn't assosciated with Zerodha in any manner. This is a completely open and FOSS project.
+1) The author of this program is currently employed by Zerodha but this software isn't assosciated with Zerodha in any manner. This is a completely open and FOSS project.
 
-- If you use this program and lose money, don't blame me. This software comes with absolutely no 
+2) If you use this program and lose money, don't blame me. This software comes with absolutely no 
 guarantees.
 
-- Due to Indian Exchange regulations and guidelines the user(s) are expected to login to the trading platform every day before placing trades. To comply with that, the login cannot be automated. Since Terraform needs to call Kite API to get the latest state and modify the state, any kind of API call needs an access token. It is not possible to persist the Access Token across Terraform runs so this program persists it on the user's local path `.tf-kite-secret`. Future versions of this program will make the path to this file as a provider config. You are expected to keep this file private and not keep this open to shared environments. To repeat point `2)`, if you lose money while using/due to this program, don't blame me.
+3) Due to Indian Exchange regulations and guidelines the user(s) are expected to login to the trading platform every day before placing trades. To comply with that, the login cannot be automated. Since Terraform needs to call Kite API to get the latest state and modify the state, any kind of API call needs an access token. It is not possible to persist the Access Token across Terraform runs so this program persists it on the user's local path `.tf-kite-secret`. Future versions of this program will make the path to this file as a provider config. You are expected to keep this file private and not keep this open to shared environments. To repeat point `2)`, if you lose money while using/due to this program, don't blame me.
 
 ### Develop
 
