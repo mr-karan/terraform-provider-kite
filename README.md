@@ -64,14 +64,14 @@ For eg, to import `INFY` from your holdings:
 
 The provider requires the following environment variables to authenticate with Kite API:
 
-- KITE_API_KEY=<>
-- KITE_API_SECRET=<>
-- KITE_API_REQUEST_TOKEN=<>
+- `KITE_API_KEY=<>`
+- `KITE_API_SECRET=<>`
+- `KITE_API_REQUEST_TOKEN=<>`
 
 You can generate these credentials using [Kite Developer Console](https://developers.kite.trade/).
 To get `KITE_API_REQUEST_TOKEN` you need to visit the public Kite login endpoint at [https://kite.zerodha.com/connect/login?v=3&api_key=xxx](https://kite.zerodha.com/connect/login?v=3&api_key=xxx). You will get `request_token` as a URL parameter to the redirect URL registered for your app. This is a one time token and will expire after first succesful login attempt.
 
-Please read point `3)` in [Warnings and Caveats](#Warnings and Caveats) section to know how the access token is persisted across multiple runs of `terraform`.
+Please read point `3)` in [Warnings and Caveats](#warnings-and-caveats) section to know how the access token is persisted across multiple runs of `terraform`.
 
 To initialise the provider:
 
