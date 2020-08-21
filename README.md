@@ -1,7 +1,7 @@
 # Terraform Provider Kite
 _Terraform plugin for managing stock portfolio with Zerodha Kite_
 
-[![asciicast](https://asciinema.org/a/354736)](https://asciinema.org/a/354736)
+[![asciicast](https://asciinema.org/a/354736.png)](https://asciinema.org/a/354736)
 
 ## Why
 
