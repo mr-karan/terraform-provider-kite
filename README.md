@@ -86,7 +86,7 @@ provider "kite" {
 
 ## Warnings and Caveats
 
-1) The author of this program is currently employed by Zerodha but this software isn't assosciated with Zerodha in any manner. This is a completely open and FOSS project.
+1) The author of this program is currently employed by Zerodha but this software isn't associated with Zerodha in any manner. This is a completely open and FOSS project.
 
 2) If you use this program and lose money, don't blame me. This software comes with absolutely no 
 guarantees.
